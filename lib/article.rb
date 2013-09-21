@@ -49,7 +49,7 @@ require 'science'
      when "list"
        puts "listing...."
      when "add"
-       puts "adding..."
+          add
      when "find"
        puts "finding..."
      when "quit"
@@ -59,9 +59,21 @@ require 'science'
      end
  end
 
+ def add 
+     puts "\nAdding an Article:\n\n".upcase
+
+     science = Science.build_using_questions
+
+     if science.save
+       puts "\nArticle Added!\n"
+     else
+       puts "\nError in saving! Article not sdded!\n"
+     end
+ end
+
  def intro
      puts "\n\n<<< Welcome to the Article Finder >>>\n"
-     puts "\nThis is an interactive Ruby program to help you list/find\narticles or bibilographic docs\n\n"
+     puts "\nAn interactive Ruby program to help you find articles you are striving with!!\n\n"
  end
 
  def conclusion
