@@ -55,7 +55,7 @@ require 'science'
      when "quit"
        return :quit
      else 
-       puts "\nCommand cannot be recognized!"
+       puts "\nCommand cannot be recognized, Please try again!!"
      end
  end
 
