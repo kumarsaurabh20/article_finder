@@ -1,4 +1,7 @@
+require 'helper/num_helper'
 class Science
+
+ include NumHelper
 
  @@filepath = nil
 
@@ -100,6 +103,10 @@ class Science
    file.puts "#{[@title, @author, @publication, @date].join("\t")}"  
    end
    return true
+ end
+
+ def formatted_price
+     #format_currency(@price)
  end
 
 
