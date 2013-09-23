@@ -31,6 +31,18 @@ class Science
 
  def self.saved_articles
 
+     #read the article file
+     articles = []
+     if file_usable?
+        file = File.new(@@filepath, 'r')
+	     file.each_line do |line|
+	      articles << Science.new.import_line(line.chomp) 
+	     end
+	file.close
+     end
+     #return the instances of articles
+     return articles
+
  end
 
  def initialize(args={})
@@ -60,6 +72,26 @@ class Science
       args[:date] = gets.chomp.strip
 
      return self.new(args)
+ end
+
+ def import_line(line)
+
+     line_array = line.split("\t")
+     #can use either way
+     #@title = line_array.shift
+     #@author = line_array.shift
+     #@publication = line_array.shift
+     #@date = line_array.shift
+
+    #multiple assignment together in an array. 
+    #Though the square brackets are missing but the following is an array
+    #it will assign each value in the array to the instance variables.
+    @title, @author, @publication, @date = line_array
+
+    return self
+    #need to return an instance(method used above) and populate that 
+    #instance in the articles in saved_article method
+
  end
 
  def save

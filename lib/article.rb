@@ -47,7 +47,7 @@ require 'science'
  def do_action(action)
      case action
      when "list"
-       puts "listing...."
+           list
      when "add"
           add
      when "find"
@@ -57,6 +57,14 @@ require 'science'
      else 
        puts "\nCommand cannot be recognized, Please try again!!"
      end
+ end
+
+ def list
+    puts "\nListing Articles\n\n".upcase
+    articles = Science.saved_articles
+    articles.each do |art|
+      puts art.title + " | " + art.author + " | " + art.publication + " | " + art.date  
+    end
  end
 
  def add 
