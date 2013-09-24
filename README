@@ -2,9 +2,12 @@ Article finder ruby app (for fun)
 ===================================
 
 start the program by launching the init.rb from terminal (ruby init.rb)
+
 Some current functionalities are: 
-Adding article, listing articles, serach for articles by author/publication name or by date etc.
-*Sorting results is also possible. 
+--Adding article
+--listing articles, 
+--serach for articles by author/publication name or by date etc.
+--Sorting results is also possible. 
 
                   LISTING ARTICLES
 
@@ -14,6 +17,6 @@ Adding article, listing articles, serach for articles by author/publication name
  XYZ         XYZ              XYZ                 2015      
  XYZ         XYZ              XYZ                 2014          
 ---------------------------------------------------------------
-*Sort using: 'list title/author/publication/date' or 'list by title/author/publication/date'
+Sort using: 'list title/author/publication/date' or 'list by title/author/publication/date'
 
 
