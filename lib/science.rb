@@ -5,7 +5,7 @@ class Science
 
  @@filepath = nil
 
- attr_accessor :title, :author, :publication, :date
+ attr_accessor :title, :author, :publication, :date, :location
  
  def self.filepath=(path=nil)
     @@filepath = File.join(APP_ROOT, path)
@@ -53,6 +53,7 @@ class Science
 	  @author      = args[:author]      || ""
 	  @publication = args[:publication] || ""
 	  @date        = args[:date]        || ""
+          @location    = args[:location]    || ""
  end
 
  def self.build_using_questions
@@ -74,6 +75,10 @@ class Science
      #science.date = gets.chomp.strip
       args[:date] = gets.chomp.strip
 
+    print "Add Location: "
+     #science.location = gets.chomp.strip
+      args[:location] = gets.chomp.strip
+
      return self.new(args)
  end
 
@@ -89,7 +94,7 @@ class Science
     #multiple assignment together in an array. 
     #Though the square brackets are missing but the following is an array
     #it will assign each value in the array to the instance variables.
-    @title, @author, @publication, @date = line_array
+    @title, @author, @publication, @date, @location = line_array
 
     return self
     #need to return an instance(method used above) and populate that 
@@ -100,7 +105,7 @@ class Science
  def save
    return false unless Science.file_usable?
    File.open(@@filepath, 'a') do |file|
-   file.puts "#{[@title, @author, @publication, @date].join("\t")}"  
+   file.puts "#{[@title, @author, @publication, @date, @location].join("\t")}"  
    end
    return true
  end

@@ -139,26 +139,28 @@ class Article
  private
 
  def output_action_header(text)
-     puts "\n#{text.upcase.center(110)}\n\n"
+     puts "\n#{text.upcase.center(140)}\n\n"
  end
 
  def output_articles(articles=[])
 
-     print " " + "Title".ljust(40)
-     print " " + "Author".ljust(30)
-     print " " + "Publication".ljust(30)
-     print " " + "Date".ljust(10) + "\n"
-     puts "-" * 110
+     print " " + "Title".ljust(65)
+     print " " + "Author".ljust(20)
+     print " " + "Publication".ljust(20)
+     print " " + "Date".ljust(10)
+     print " " + "Location".ljust(25) #+ "\n"
+     puts "-" * 140
      articles.each do |art|
-       line = " " << art.title.ljust(40)
-       line << " " + art.author.titleize.ljust(30)
-       line << " " + art.publication.titleize.ljust(30)
+       line = " " << art.title.ljust(65)
+       line << " " + art.author.titleize.ljust(20)
+       line << " " + art.publication.titleize.ljust(20)
        line << " " + art.date.ljust(10)
+       line << " " + art.location.ljust(25)
 
        puts line
      end
      puts "No listing found" if articles.empty?
-     puts "-" * 110
+     puts "-" * 140
  end
 
 end
