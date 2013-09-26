@@ -11,11 +11,11 @@ Some current functionalities are:
 
                   LISTING ARTICLES
 
- Title      Author        Publication            Date      
+ Title      Author    Publication      Date    Location
 --------------------------------------------------------------
- XYZ         XYZ              XYZ                 2013      
- XYZ         XYZ              XYZ                 2015      
- XYZ         XYZ              XYZ                 2014          
+ XYZ         XYZ          XYZ          2013   /home/Documents
+ XYZ         XYZ          XYZ          2015   /home/Documents   
+ XYZ         XYZ          XYZ          2014   /home/Documents       
 ---------------------------------------------------------------
 Sort using: 'list title/author/publication/date' or 'list by title/author/publication/date'
 
