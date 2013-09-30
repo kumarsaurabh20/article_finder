@@ -38,7 +38,7 @@ class Article
  end
 
  def start!
-    intro
+    topic
     #action loop (list, find, add, quit)
 	    result = nil
 	    until result == :quit
@@ -46,7 +46,7 @@ class Article
 	    action, args = get_action
 	    result = do_action(action, args)
 	    end
-    conclusion
+    conclude
  end
 
  def do_action(action, args=[])
@@ -127,16 +127,15 @@ class Article
      end
  end
 
- def intro
-     puts "\n\n<<< Welcome to the Article Finder >>>\n"
-     puts "\nAn interactive Ruby program to help you find articles you are striving with!!\n\n"
- end
-
- def conclusion
-     puts "\n\n<<< Goodbye and Thank you for using Article Finder!!!! >>>\n\n"
- end
-
  private
+ 
+ def topic
+    puts "Welcome to Article finder. Please proceed with your action!!! "
+ end
+
+ def conclude
+    puts "If you wish you can continue your search in different categories otherwise quit!!!"
+ end
 
  def output_action_header(text)
      puts "\n#{text.upcase.center(140)}\n\n"

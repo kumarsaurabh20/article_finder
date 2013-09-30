@@ -9,7 +9,9 @@ APP_ROOT = File.dirname(__FILE__)
 #require File.join(APP_ROOT, 'lib', 'guide')
 
 $:.unshift(File.join(APP_ROOT, 'lib'))
-require 'article'
+require 'search'
 
-article = Article.new('article.txt')
-article.start!
+search = Search.new
+search.start_app
+
+
