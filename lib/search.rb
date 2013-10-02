@@ -11,7 +11,7 @@ attr_accessor :actions
      action = nil
      until @actions.include?(action)
      puts "Actions: " + @actions.join(', ') if action
-     print "finder>> "
+     print "finder->> "
      user_input = gets.chomp
      action = user_input.downcase.strip
      end
@@ -49,8 +49,18 @@ attr_accessor :actions
  end
 
  def intro
-     puts "\n\n<<< Welcome to the Article Finder >>>\n"
-     puts "\nAn interactive Ruby program to help you find articles you are striving with!!\n\n"
+     puts  " "
+     puts  " "
+     print "  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  \n"
+     puts  "*                                                                           *"
+     print "*                       Welcome to the Article Finder                       *\n"
+     print "* An interactive Ruby program to help you locate data you are striving with!*\n"
+     puts  "*                                                                           *"
+     puts  "*                       by, Kumar Saurabh Singh                             *"
+     puts  "*                                                                           *"
+     print "  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n"
+     puts  " "
+     puts  " "
      puts "What would you like to search?? "
  end
 

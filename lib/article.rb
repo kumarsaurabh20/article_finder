@@ -28,7 +28,7 @@ class Article
    action = nil
 	   until Article::Config.actions.include?(action)
 	   puts "Actions: " + Article::Config.actions.join(", ") if action
-	   print "> "
+	   print "article->> "
 	   user_input = gets.chomp
 	   args = user_input.downcase.strip.split(" ")
            action = args.shift
