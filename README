@@ -3,6 +3,9 @@ Article finder ruby app (for fun)
 
 start the program by launching the init.rb from terminal (ruby init.rb)
 
+App works by listing data from different files. For every component there is one data file. If you dont know about 
+what to enter, enter some gibberish and the program will tell you what action command you need to enter.
+
 Some current functionalities are: 
 --Adding article
 --listing articles, 
