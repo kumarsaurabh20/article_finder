@@ -56,7 +56,6 @@ attr_accessor :actions
      print "*                       Welcome to the Article Finder                       *\n"
      print "* An interactive Ruby program to help you locate data you are striving with!*\n"
      puts  "*                                                                           *"
-     puts  "*                       by, Kumar Saurabh Singh                             *"
      puts  "*                                                                           *"
      print "  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n"
      puts  " "
@@ -65,7 +64,10 @@ attr_accessor :actions
  end
 
  def conclusion
-     puts "\n\n<<< Goodbye and Thank you for using Article Finder!!!! >>>\n\n"
+     puts "\n\n        ### Goodbye and Thank you for using Article Finder!!!! ###\n\n"
+     puts  "                       Kumar Saurabh Singh                             "
+     puts  "                     kumarsaurabh20@gmail.com                          "
+     puts  "                   ############################                        "
  end
 
 
