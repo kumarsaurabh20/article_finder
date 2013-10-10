@@ -18,7 +18,7 @@ class Article
         puts "Created an article datafile!" 
      #if create doesnt work than exit           
      else
-        puts "Exiting...!"
+        puts "Exiting the program...!"
         exit!
      end
           
