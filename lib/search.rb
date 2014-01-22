@@ -64,10 +64,10 @@ attr_accessor :actions
  end
 
  def conclusion
-     puts "\n\n        ### Goodbye and Thank you for using Article Finder!!!! ###\n\n"
-     puts  "                       Kumar Saurabh Singh                             "
-     puts  "                     kumarsaurabh20@gmail.com                          "
-     puts  "                   ############################                        "
+     puts "\n\n    ### Goodbye and Thank you for using Article Finder!! ###\n\n"
+     puts  "                       Kumar Saurabh Singh                         "
+     puts  "                     kumarsaurabh20@gmail.com                      "
+     puts  "                   ############################                    "
  end
 
 
